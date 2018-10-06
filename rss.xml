@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[relevant programmer]]></title><description><![CDATA[I'm a full stack software engineer.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Sat, 06 Oct 2018 03:24:50 GMT</lastBuildDate><item><title><![CDATA[Docker for programmers]]></title><description><![CDATA[This blog post covers details on using docker to improve the productivity of programmers. Why should we use docker?
+There are scenarios…]]></description><link>/docker-for-programmers/</link><guid isPermaLink="false">/docker-for-programmers/</guid><pubDate>Sat, 06 Oct 2018 02:13:55 GMT</pubDate><content:encoded>&lt;p&gt;This blog post covers details on using docker to improve the productivity of programmers.&lt;/p&gt;
+&lt;p&gt;Why should we use docker?
+There are scenarios where we want to test something quickly without installing dependencies on your developer machine. &lt;/p&gt;
+&lt;p&gt;Let’s take an example of testing a static website on a local machine.
+We many options to do this, such as use nginx, nodejs express etc. Assume we want to use nginx, it would require nginx installation with a version we want. If we have an existing nginx version on a local machine then we would require it to be uninstalled before new version installation.
+Here comes docker with the solution, we don’t need to uninstall the existing version or install new nginx version on a local machine. Instead, we will be downloading nginx docker image on the local machine. &lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull nginx:1.15.5&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Above command will download nginx 1.15.5 docker image on the local machine.&lt;/p&gt;
+&lt;p&gt;To test static website build.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -it -p 3000:80 -v /your-build-dir:/usr/share/nginx/html nginx&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It will start nginx inside docker and host machine can access the site on port 3000(&lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;). &lt;/p&gt;</content:encoded></item></channel></rss>
