@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/relevant-programmer/0.736137a62d44a0800e45.css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/relevant-programmer/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/relevant-programmer/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/relevant-programmer/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/relevant-programmer/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/relevant-programmer/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/relevant-programmer/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/relevant-programmer/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/relevant-programmer/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/relevant-programmer/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/relevant-programmer/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/relevant-programmer/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/relevant-programmer/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/relevant-programmer/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/relevant-programmer/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/relevant-programmer/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/relevant-programmer/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/relevant-programmer/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/relevant-programmer/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/relevant-programmer/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/relevant-programmer/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/relevant-programmer/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/relevant-programmer/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/relevant-programmer/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/relevant-programmer/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/relevant-programmer/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/relevant-programmer/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/relevant-programmer/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/relevant-programmer/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}code[class*=language-],pre[class*=language-]{-moz-tab-size:4;-ms-hyphens:none;-o-tab-size:4;-webkit-hyphens:none;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;hyphens:none;line-height:1.5;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{background:#b3d4fc;text-shadow:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.0.0"/><link rel="alternate" type="application/rss+xml" href="/relevant-programmer/rss.xml"/><link rel="shortcut icon" href="/relevant-programmer/icons/icon-48x48.png"/><link rel="manifest" href="/relevant-programmer/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">Typescript react app with yarn workspaces | relevant programmer</title><meta data-react-helmet="true" name="description" content="Prerequisites: Nodejs yarn create-react-app There are so many posts available for creating react app with yarn workspaces, but I have not…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link as="script" rel="preload" href="/relevant-programmer/7-1563c8a8091e2640ecd2.js"/><link as="script" rel="preload" href="/relevant-programmer/component---src-templates-blog-post-js-ce93be397bfac66eaca3.js"/><link as="script" rel="preload" href="/relevant-programmer/app-8a341da86bab6513edc2.js"/><link as="script" rel="preload" href="/relevant-programmer/0-4bba17a62b2f536ab807.js"/><link as="script" rel="preload" href="/relevant-programmer/webpack-runtime-585c37e1f01f9d95e2fa.js"/><link rel="preload" href="/relevant-programmer/static/d/449/path---typescript-react-app-with-yarn-worspaces-7-e-9-f63-fKyLJiJMzmLDqEEgUxxT6k8aETQ.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:49rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/relevant-programmer/">relevant programmer</a></h3><h1>Typescript react app with yarn workspaces</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 09, 2018</p><div><p>Prerequisites:</p>
+<ul>
+<li>Nodejs</li>
+<li>yarn</li>
+<li>create-react-app</li>
+</ul>
+<p>There are so many posts available for creating react app with yarn workspaces, but I have not came across any article with typescript.</p>
+<p>To create a sample app we will use <code class="language-text">create-react-app</code> utility.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">create-react-app typescript-react-yarn-worspaces --scripts-version=react-scripts-ts
+
+cd typescript-react-yarn-worspaces</code></pre></div>
+<p>Eject app to unpack all configuration files into our application. This is required to include yarn workspaces directory in typescript configurations.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">yarn eject</code></pre></div>
+<p>It will display a message “Are you sure you want to eject? This action is permanent.” Press ‘y’ to confirm. It should unpack configuration files.</p>
+<p><code class="language-text"></code></p>
+<h3>Why yarn workspaces?</h3>
+<p>Multiple reusable packages can be adding in single repository which can depend on each other with single yarn lock file at root directory. This also has benefit of always referring to latest package source code.</p>
+<h3>Code changes</h3>
+<p>Open new ‘typescript-react-yarn-worspaces’ directory in your favorite IDE.</p>
+<p>Create a directory for packages at root level (<code class="language-text">typescript-react-yarn-worspaces\packages</code>).</p>
+<p>Open package.json file and add worspaces details.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&quot;workspaces&quot;: [&quot;packages/*&quot;]</code></pre></div>
+<p>Modify webpack configuration to include “packages” directory to include for build and watch.</p>
+<p>Add packagesSrc in paths.js file. (<code class="language-text">typescript-react-yarn-worspaces/config/paths.js</code>)</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1132f.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 12.512413108242304%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAv0lEQVQI1x2O23KCMAAF+RGnIoRwvzfFVCOQiE6tztiZ/v+nbLEP+7h7jlcZx2Atg9GYQ4fRLX1b0sYRTRJRxYKd75OmCWlVoe6/dPPC5+I4zho79oymX50clUu8UERIKYnXwAspBGEY4q+RXRCwefMJoi1Kl2i7Dv44Tk+H+VJcHh23p+J673G2+Mdr7I1sOPH+UePOA9Ok2JcpU5NzrDK6IiVb3wkRIPOCerrQnr8p9ge0rlmumnl8OQm2L/gDUn9grMC1puQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="packages source entry"
+        title=""
+        src="/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fb8a0.png"
+        srcset="/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1a291.png 148w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-2bc4a.png 295w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fb8a0.png 590w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-526de.png 885w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fa2eb.png 1180w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-08f6a.png 1770w,
+/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1132f.png 2014w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Modify webpack.config.dev.js to include packages directory.(<code class="language-text">typescript-react-yarn-worspaces/config/webpack.config.dev.js</code>)</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-b53c2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 14.754098360655737%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAr0lEQVQI1x2NWW7DMAxEc4wmtbUZciwviqTKCpA2QdH73+mV8cfDkOBw5qSMQWuNMRprDUpmpdVBp9Sxez+Kik+JT3DmrYq+61BdT9+/UXIfOJXvP1rZeZRM22Y2Z4nCbXCM8jRIYZg8oTby85d727nXGzmJd7mSYmAJHmOlREvgfp2pfqJOC1k70vlMunwe5I+LFGhSXVnLwronYkvMJYpulJ/M16sS68QYLM4Z/gFQIldMm4ew+AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="dev 01"
+        title=""
+        src="/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fb8a0.png"
+        srcset="/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-1a291.png 148w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-2bc4a.png 295w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fb8a0.png 590w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-526de.png 885w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fa2eb.png 1180w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-08f6a.png 1770w,
+/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-b53c2.png 2562w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-a0c46.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 20.890688259109314%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA2klEQVQY0y2PaW7CMBBGc40S73Zsh4ZQCKBCylb1/ld6Hdr8eJoZafQtTR8jNVfWwTOmjo3cUSl8q/5mUpqgNbXPlHVP11f6HBlqodaOIHvIiZgDzluayVjm6cz8ceK+P/E9Dnw5x9VZTsawe1uxaVuGbWGYNuyfdw63C5+PC/PjwPV55PZzZpq35LWj0d7R7Y6E9xHlA9oZjAgaEdTW0oqokpm7jAuJIsau69ESxEh6I01eqJUgdxNDIEpV5yPWeYzU0wtmwXtPKYWUEkF+rRgb6/7/xPCFWfgFS6xyxMrkVokAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="dev 02"
+        title=""
+        src="/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fb8a0.png"
+        srcset="/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-1a291.png 148w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-2bc4a.png 295w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fb8a0.png 590w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-526de.png 885w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fa2eb.png 1180w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-08f6a.png 1770w,
+/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-a0c46.png 2470w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-b8876.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 25.956061838893408%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABA0lEQVQY01WQSW7DMBAE9YzEEleR4mIttox4iR3k/6+qjKVTDg0SM43pRjXKOczgMcFgvaZTilbrf+q0YYgD1lpssJvPakXXdrSHlvZzV9cqmlVp7tPKo478HifuuTJ/HFjEMH8eOIlGo5jPhTonltedy23h+rgwfy3Mt4nT95nT80yZepokDY6pUkIiWE9yniyzLEHvN0qLXlrnmuij7KaJmBMuRkIKMo+7SsT3hkYbg/Ge+nhRblfSMlKWTEo9OQd0b/Hh/S8YCXBhYHz+kNeVPNf9WHCCxKOdHHxzccIxlkKUdJ/yFqCEkTIaY/XGbhh2hl52oR43rxuSHHGbV9vd+wdHlY7hosiAXwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="dev 03"
+        title=""
+        src="/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fb8a0.png"
+        srcset="/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-1a291.png 148w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-2bc4a.png 295w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fb8a0.png 590w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-526de.png 885w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fa2eb.png 1180w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-08f6a.png 1770w,
+/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-b8876.png 2458w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-a6e73.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 13.647246608140462%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAt0lEQVQI1y3OW26DMABEUXbRhpfBjwDGiSMbSFKhUIU2+9/RrdX242g+RiNN1ocJNU/IGGjOA43rOHYaLSqUqP+yFVjboUeHvi20iZg9dXRp5+jTTnUKaRqy9bLwiCvb9ZMt3PkwlqmoCO8HwiEnvuV4KfDRMobUfT1Zvnfmfef6enJ/rcRtJj4Co9dkejwhrUO5M8ZH2n6gTM/K+p8QSKUw2qDNEW1PqMFh3OVXLVqKPE8KyrLiB3PXWVDDA84JAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="dev 04"
+        title=""
+        src="/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fb8a0.png"
+        srcset="/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-1a291.png 148w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-2bc4a.png 295w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fb8a0.png 590w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-526de.png 885w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fa2eb.png 1180w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-08f6a.png 1770w,
+/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-a6e73.png 2506w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Modify webpack.config.prod.js to include packages directory.(<code class="language-text">typescript-react-yarn-worspaces/config/webpack.config.prod.js</code>)</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-a0c46.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 14.331983805668017%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAArUlEQVQI10WMS3KDMBTAOEaTBrDxDxyHZ4PJDJN2cv9TKe6qC+0kdSZGbHDM3pKiwwfLqEf0pBiV4rvvUVpjjWUKc3M9wRrW5a8xjOOAbqhhoO8HOtlPtnrylEJNkdLGohXFaMRMuFuPd4YwW2I9yD9vtqOy7UIud2SdKdI6WbBO0z39QvWR6gKbW5DL9Z+vC+V6o5aE7JHHnkhHZq0PYhummsivTP6t5FMId80HFfJYfvRl0FsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="prod 01"
+        title=""
+        src="/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fb8a0.png"
+        srcset="/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-1a291.png 148w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-2bc4a.png 295w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fb8a0.png 590w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-526de.png 885w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fa2eb.png 1180w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-08f6a.png 1770w,
+/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-a0c46.png 2470w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-30ac1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 17.42671009771987%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAtElEQVQI1yWObW6DMBAFuQbBH9gG24CcxCmEqJCmae5/pqnb/Bi9WWn1dqvROQYfmazh3PUcy9wJiW0EToi3l4zRE4ZAPw6MwZGKj4PHFXeh+09jNdWsDduys+WVr8uV5ymxm5a91axKca4bUl1zPJWjeeLj9cP82Fi/Nz4fC/tz5v66sdwvxMlSKWPo84JNGWE7ZKtQpewPqTWHUirLjveB1lhCvmJjQmmLKp+r5o04FBrJL4N1V6JuCw1EAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="prod 02"
+        title=""
+        src="/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fb8a0.png"
+        srcset="/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-1a291.png 148w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-2bc4a.png 295w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fb8a0.png 590w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-526de.png 885w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fa2eb.png 1180w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-08f6a.png 1770w,
+/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-30ac1.png 2456w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-a0c46.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 13.441295546558704%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAoElEQVQI113NWw6CMBCFYbZhCy1QbEFpAQ2x4iXuf1O/o2/68GVOzkwyRd232M5St4ayqlDGoP8o6Z3r8CHQ+OZ721hDpUv0TguFEp9cXJfM7TDySgvbMTLJYlb6R5IuxsC0JubngzUv5G3llM+kS+J0P7M8VuYcKaZhJBhLsI2oCfL1R1nitabv9wxxYJgizre03sl0+ENHOO4Jo5fseAMUG1YfPFqs7gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="prod 03"
+        title=""
+        src="/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fb8a0.png"
+        srcset="/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-1a291.png 148w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-2bc4a.png 295w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fb8a0.png 590w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-526de.png 885w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fa2eb.png 1180w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-08f6a.png 1770w,
+/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-a0c46.png 2470w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Now let’s create a reusable <code class="language-text">Header</code> component for the application. Create a ‘header’ directory inside packages(<code class="language-text">typescript-react-yarn-worspaces\packages\header</code>) and add below files.</p>
+<p>Add package.json file(<code class="language-text">typescript-react-yarn-worspaces\packages\header\package.json</code>).</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{
+    &quot;name&quot;: &quot;@my-app/header&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;private&quot;: true,
+    &quot;dependencies&quot;: {
+        &quot;react&quot;: &quot;^16.5.2&quot;,
+        &quot;react-dom&quot;: &quot;^16.5.2&quot;
+    },
+    &quot;devDependencies&quot;: {
+        &quot;@types/node&quot;: &quot;^10.11.4&quot;,
+        &quot;@types/react&quot;: &quot;^16.4.16&quot;,
+        &quot;@types/react-dom&quot;: &quot;^16.0.8&quot;,
+        &quot;typescript&quot;: &quot;^3.1.1&quot;
+    }
+}</code></pre></div>
+<p>Add index.tsx file(<code class="language-text">typescript-react-yarn-worspaces\packages\header\index.tsx</code>).</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">import * as React from &#39;react&#39;;
+
+export class Header extends React.Component {
+  public render() {
+    return (
+        &lt;header className=&quot;App-header&quot;&gt;
+          &lt;h1 className=&quot;App-title&quot;&gt;Header from packages&lt;/h1&gt;
+        &lt;/header&gt;
+    );
+  }
+}</code></pre></div>
+<p>Modify root package json to add header package dependency along with App.tsx file.</p>
+<p>package.json dependency</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-3f416.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 13.012295081967212%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAs0lEQVQI1z2MwQ7BQBRF+x20Mx0zZqalRRXVsBBBkIhYspP4/084WsTi5Lyb9+4LlnlBleZU1lMrxcpoZkL+mcuYcu7YnGbUmyG7+57z68bxeWH/2HK+jtkeMsq1o1xZApUMUFrTFYKulHR+bgl/WUiB9w6bJKTTEj+e4BJPr69RPYmU35vWwWCxJnWWie+TW/PxyJnPrFVMFIZEUYQxpinE+KLCFQuyZp81D1uP3Lc7bHgDXWBZ7XJ9KmoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="package-json"
+        title=""
+        src="/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fb8a0.png"
+        srcset="/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-1a291.png 148w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-2bc4a.png 295w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fb8a0.png 590w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-526de.png 885w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fa2eb.png 1180w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-08f6a.png 1770w,
+/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-3f416.png 1952w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>App.tsx</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">import { Header } from &#39;@my-app/header&#39;;
+import * as React from &#39;react&#39;;
+import &#39;./App.css&#39;;
+
+class App extends React.Component {
+  public render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+        &lt;Header/&gt;
+        &lt;p className=&quot;App-intro&quot;&gt;
+          To get started, edit &lt;code&gt;src/App.tsx&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;</code></pre></div>
+<p>To start app do as below.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">yarn install
+yarn start</code></pre></div>
+<p>Code is available at <a href="https://github.com/ashokdudhade/typescript-react-yarn-worspaces">github</a></p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><img src="/relevant-programmer/static/profile-pic-1bd9063cfe863fc4f5981844d60af793.jpg" alt="Ashok Dudhade" style="border-radius:50%;margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem"/><p>Written by <strong>Ashok Dudhade</strong>.<!-- --> </p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/relevant-programmer/docker-for-programmers/">← <!-- -->Docker for programmers</a></li><li></li><li><div style="display:flex;flex-direction:row;vertical-align:middle"><div style="display:flex;justify-content:center;flex-direction:column;text-align:center;padding-right:1rem">SHARE</div><div style="display:flex;height:100%"><div role="button" tabindex="0" class="SocialMediaShareButton SocialMediaShareButton--twitter"><div style="width:36px;height:36px"><svg viewBox="0 0 64 64" width="36" height="36" class="social-icon social-icon--twitter "><g><circle cx="32" cy="32" r="31" fill="#00aced"></circle></g><g><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></g></svg></div></div><div role="button" tabindex="0" class="SocialMediaShareButton SocialMediaShareButton--linkedin"><div style="width:36px;height:36px"><svg viewBox="0 0 64 64" width="36" height="36" class="social-icon social-icon--linkedin "><g><circle cx="32" cy="32" r="31" fill="#007fb1"></circle></g><g><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" fill="white"></path></g></svg></div></div></div></div></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-5567923-3', 'auto', {});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"typescript-react-app-with-yarn-worspaces-7e9","path":"/typescript-react-app-with-yarn-worspaces/"};window.dataPath="449/path---typescript-react-app-with-yarn-worspaces-7-e-9-f63-fKyLJiJMzmLDqEEgUxxT6k8aETQ";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-8a341da86bab6513edc2.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-31ee4b698d609e346331.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ce93be397bfac66eaca3.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7db2702442c72d08d460.js"],"component---src-pages-index-js":["/component---src-pages-index-js-0aa97e0fadf36cbaba9c.js"]};/*]]>*/</script><script src="/relevant-programmer/webpack-runtime-585c37e1f01f9d95e2fa.js" async=""></script><script src="/relevant-programmer/0-4bba17a62b2f536ab807.js" async=""></script><script src="/relevant-programmer/app-8a341da86bab6513edc2.js" async=""></script><script src="/relevant-programmer/component---src-templates-blog-post-js-ce93be397bfac66eaca3.js" async=""></script><script src="/relevant-programmer/7-1563c8a8091e2640ecd2.js" async=""></script></body></html>
