@@ -1,0 +1,2 @@
+webpackJsonp([30875753179511],{386:function(e,a){e.exports={data:{site:{siteMetadata:{title:"relevant programmer",subtitle:"Full stack software engineer",copyright:"© All rights reserved.",menu:[{label:"Articles",path:"/"}],author:{name:"Ashok Dudhade",email:"#",telegram:"#",twitter:"ashokdudhade",github:"ashokdudhade",rss:"#",vk:"#",linkedin:"ashok-dudhade-440a35a"}}},allMarkdownRemark:{group:[{fieldValue:"Docker",totalCount:1},{fieldValue:"React",totalCount:1}]}},pathContext:{}}}});
+//# sourceMappingURL=path---categories-3f6a3377b147255465b4.js.map

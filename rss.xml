@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[relevant programmer]]></title><description><![CDATA[I'm a full stack software engineer.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 18 Oct 2018 03:32:21 GMT</lastBuildDate><item><title><![CDATA[Typescript react app with yarn workspaces]]></title><description><![CDATA[Prerequisites: Nodejs yarn create-react-app There are so many posts available for creating react app with yarn workspaces, but I have not…]]></description><link>/typescript-react-app-with-yarn-worspaces/</link><guid isPermaLink="false">/typescript-react-app-with-yarn-worspaces/</guid><pubDate>Tue, 09 Oct 2018 02:13:55 GMT</pubDate><content:encoded>&lt;p&gt;Prerequisites:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[relevant programmer]]></title><description><![CDATA[Full stack software engineer]]></description><link>https://www.relevantprogrammer.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 19 Oct 2018 02:40:07 GMT</lastBuildDate><item><title><![CDATA[Typescript react app with yarn workspaces]]></title><description><![CDATA[There are so many posts available for creating react app with yarn workspaces, but I have not came across any article with typescript.]]></description><link>https://www.relevantprogrammer.com/posts/typescript-react-app-with-yarn-worspaces/</link><guid isPermaLink="false">https://www.relevantprogrammer.com/posts/typescript-react-app-with-yarn-worspaces/</guid><pubDate>Tue, 09 Oct 2018 02:13:55 GMT</pubDate><content:encoded>&lt;p&gt;Prerequisites:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nodejs&lt;/li&gt;
 &lt;li&gt;yarn&lt;/li&gt;
@@ -6,11 +6,15 @@
 &lt;/ul&gt;
 &lt;p&gt;There are so many posts available for creating react app with yarn workspaces, but I have not came across any article with typescript.&lt;/p&gt;
 &lt;p&gt;To create a sample app we will use &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt; utility.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;create-react-app typescript-react-yarn-worspaces --scripts-version=react-scripts-ts
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;create-react-app typescript-react-yarn-worspaces --scripts-version=react-scripts-ts
 
-cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Eject app to unpack all configuration files into our application. This is required to include yarn workspaces directory in typescript configurations.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn eject&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn eject&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;It will display a message “Are you sure you want to eject? This action is permanent.” Press ‘y’ to confirm. It should unpack configuration files.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;Why yarn workspaces?&lt;/h3&gt;
@@ -19,13 +23,15 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Open new ‘typescript-react-yarn-worspaces’ directory in your favorite IDE.&lt;/p&gt;
 &lt;p&gt;Create a directory for packages at root level (&lt;code class=&quot;language-text&quot;&gt;typescript-react-yarn-worspaces\packages&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;Open package.json file and add worspaces details.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;workspaces&amp;quot;: [&amp;quot;packages/*&amp;quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;workspaces&amp;quot;: [&amp;quot;packages/*&amp;quot;]&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Modify webpack configuration to include “packages” directory to include for build and watch.&lt;/p&gt;
 &lt;p&gt;Add packagesSrc in paths.js file. (&lt;code class=&quot;language-text&quot;&gt;typescript-react-yarn-worspaces/config/paths.js&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1132f.png&quot;
+    href=&quot;/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-ce2ca.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -33,7 +39,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -44,15 +50,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;packages source entry&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1a291.png 148w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-2bc4a.png 295w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fb8a0.png 590w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-526de.png 885w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-fa2eb.png 1180w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-08f6a.png 1770w,
-/relevant-programmer/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-1132f.png 2014w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-c83f1.png&quot;
+        srcset=&quot;/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-569e3.png 240w,
+/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-93400.png 480w,
+/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-c83f1.png 960w,
+/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-23e13.png 1440w,
+/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-10d8f.png 1920w,
+/static/paths-01-50a4289fbd67b3eb90ccb79ce63880e1-ce2ca.png 2014w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -63,7 +68,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-b53c2.png&quot;
+    href=&quot;/static/dev-01-408baf1961217aefbb2f4b5907b461c6-441bb.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -71,7 +76,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -82,15 +87,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;dev 01&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-1a291.png 148w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-2bc4a.png 295w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fb8a0.png 590w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-526de.png 885w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-fa2eb.png 1180w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-08f6a.png 1770w,
-/relevant-programmer/static/dev-01-408baf1961217aefbb2f4b5907b461c6-b53c2.png 2562w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/dev-01-408baf1961217aefbb2f4b5907b461c6-c83f1.png&quot;
+        srcset=&quot;/static/dev-01-408baf1961217aefbb2f4b5907b461c6-569e3.png 240w,
+/static/dev-01-408baf1961217aefbb2f4b5907b461c6-93400.png 480w,
+/static/dev-01-408baf1961217aefbb2f4b5907b461c6-c83f1.png 960w,
+/static/dev-01-408baf1961217aefbb2f4b5907b461c6-23e13.png 1440w,
+/static/dev-01-408baf1961217aefbb2f4b5907b461c6-10d8f.png 1920w,
+/static/dev-01-408baf1961217aefbb2f4b5907b461c6-441bb.png 2562w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -100,7 +104,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-a0c46.png&quot;
+    href=&quot;/static/dev-02-24af1ec620656b8907544559cb02d1dc-4a899.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -108,7 +112,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -119,15 +123,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;dev 02&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-1a291.png 148w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-2bc4a.png 295w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fb8a0.png 590w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-526de.png 885w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-fa2eb.png 1180w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-08f6a.png 1770w,
-/relevant-programmer/static/dev-02-24af1ec620656b8907544559cb02d1dc-a0c46.png 2470w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/dev-02-24af1ec620656b8907544559cb02d1dc-c83f1.png&quot;
+        srcset=&quot;/static/dev-02-24af1ec620656b8907544559cb02d1dc-569e3.png 240w,
+/static/dev-02-24af1ec620656b8907544559cb02d1dc-93400.png 480w,
+/static/dev-02-24af1ec620656b8907544559cb02d1dc-c83f1.png 960w,
+/static/dev-02-24af1ec620656b8907544559cb02d1dc-23e13.png 1440w,
+/static/dev-02-24af1ec620656b8907544559cb02d1dc-10d8f.png 1920w,
+/static/dev-02-24af1ec620656b8907544559cb02d1dc-4a899.png 2470w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -137,7 +140,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-b8876.png&quot;
+    href=&quot;/static/dev-03-ffa031caa7b682268a186e3833279945-7ee97.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -145,7 +148,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -156,15 +159,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;dev 03&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-1a291.png 148w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-2bc4a.png 295w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fb8a0.png 590w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-526de.png 885w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-fa2eb.png 1180w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-08f6a.png 1770w,
-/relevant-programmer/static/dev-03-ffa031caa7b682268a186e3833279945-b8876.png 2458w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/dev-03-ffa031caa7b682268a186e3833279945-c83f1.png&quot;
+        srcset=&quot;/static/dev-03-ffa031caa7b682268a186e3833279945-569e3.png 240w,
+/static/dev-03-ffa031caa7b682268a186e3833279945-93400.png 480w,
+/static/dev-03-ffa031caa7b682268a186e3833279945-c83f1.png 960w,
+/static/dev-03-ffa031caa7b682268a186e3833279945-23e13.png 1440w,
+/static/dev-03-ffa031caa7b682268a186e3833279945-10d8f.png 1920w,
+/static/dev-03-ffa031caa7b682268a186e3833279945-7ee97.png 2458w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -174,7 +176,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-a6e73.png&quot;
+    href=&quot;/static/dev-04-08175679660ba597f943e4c483481972-0f2f3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -182,7 +184,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -193,15 +195,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;dev 04&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-1a291.png 148w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-2bc4a.png 295w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fb8a0.png 590w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-526de.png 885w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-fa2eb.png 1180w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-08f6a.png 1770w,
-/relevant-programmer/static/dev-04-08175679660ba597f943e4c483481972-a6e73.png 2506w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/dev-04-08175679660ba597f943e4c483481972-c83f1.png&quot;
+        srcset=&quot;/static/dev-04-08175679660ba597f943e4c483481972-569e3.png 240w,
+/static/dev-04-08175679660ba597f943e4c483481972-93400.png 480w,
+/static/dev-04-08175679660ba597f943e4c483481972-c83f1.png 960w,
+/static/dev-04-08175679660ba597f943e4c483481972-23e13.png 1440w,
+/static/dev-04-08175679660ba597f943e4c483481972-10d8f.png 1920w,
+/static/dev-04-08175679660ba597f943e4c483481972-0f2f3.png 2506w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -212,7 +213,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-a0c46.png&quot;
+    href=&quot;/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-4a899.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -220,7 +221,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -231,15 +232,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;prod 01&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-1a291.png 148w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-2bc4a.png 295w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fb8a0.png 590w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-526de.png 885w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-fa2eb.png 1180w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-08f6a.png 1770w,
-/relevant-programmer/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-a0c46.png 2470w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-c83f1.png&quot;
+        srcset=&quot;/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-569e3.png 240w,
+/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-93400.png 480w,
+/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-c83f1.png 960w,
+/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-23e13.png 1440w,
+/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-10d8f.png 1920w,
+/static/prod-01-53c8987a84bd0a9f0e369520b35764ad-4a899.png 2470w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -249,7 +249,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-30ac1.png&quot;
+    href=&quot;/static/prod-02-43ef4e5f357caf016af8204daaae29a7-4c546.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -257,7 +257,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -268,15 +268,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;prod 02&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-1a291.png 148w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-2bc4a.png 295w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fb8a0.png 590w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-526de.png 885w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-fa2eb.png 1180w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-08f6a.png 1770w,
-/relevant-programmer/static/prod-02-43ef4e5f357caf016af8204daaae29a7-30ac1.png 2456w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/prod-02-43ef4e5f357caf016af8204daaae29a7-c83f1.png&quot;
+        srcset=&quot;/static/prod-02-43ef4e5f357caf016af8204daaae29a7-569e3.png 240w,
+/static/prod-02-43ef4e5f357caf016af8204daaae29a7-93400.png 480w,
+/static/prod-02-43ef4e5f357caf016af8204daaae29a7-c83f1.png 960w,
+/static/prod-02-43ef4e5f357caf016af8204daaae29a7-23e13.png 1440w,
+/static/prod-02-43ef4e5f357caf016af8204daaae29a7-10d8f.png 1920w,
+/static/prod-02-43ef4e5f357caf016af8204daaae29a7-4c546.png 2456w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -286,7 +285,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-a0c46.png&quot;
+    href=&quot;/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-4a899.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -294,7 +293,7 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -305,15 +304,14 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;prod 03&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-1a291.png 148w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-2bc4a.png 295w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fb8a0.png 590w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-526de.png 885w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-fa2eb.png 1180w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-08f6a.png 1770w,
-/relevant-programmer/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-a0c46.png 2470w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-c83f1.png&quot;
+        srcset=&quot;/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-569e3.png 240w,
+/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-93400.png 480w,
+/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-c83f1.png 960w,
+/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-23e13.png 1440w,
+/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-10d8f.png 1920w,
+/static/prod-03-87a08efd73bf4e7398dd2b883aedd64c-4a899.png 2470w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -322,7 +320,8 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &lt;/p&gt;
 &lt;p&gt;Now let’s create a reusable &lt;code class=&quot;language-text&quot;&gt;Header&lt;/code&gt; component for the application. Create a ‘header’ directory inside packages(&lt;code class=&quot;language-text&quot;&gt;typescript-react-yarn-worspaces\packages\header&lt;/code&gt;) and add below files.&lt;/p&gt;
 &lt;p&gt;Add package.json file(&lt;code class=&quot;language-text&quot;&gt;typescript-react-yarn-worspaces\packages\header\package.json&lt;/code&gt;).&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
     &amp;quot;name&amp;quot;: &amp;quot;@my-app/header&amp;quot;,
     &amp;quot;version&amp;quot;: &amp;quot;0.1.0&amp;quot;,
     &amp;quot;private&amp;quot;: true,
@@ -336,9 +335,11 @@ cd typescript-react-yarn-worspaces&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         &amp;quot;@types/react-dom&amp;quot;: &amp;quot;^16.0.8&amp;quot;,
         &amp;quot;typescript&amp;quot;: &amp;quot;^3.1.1&amp;quot;
     }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Add index.tsx file(&lt;code class=&quot;language-text&quot;&gt;typescript-react-yarn-worspaces\packages\header\index.tsx&lt;/code&gt;).&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import * as React from &amp;#39;react&amp;#39;;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import * as React from &amp;#39;react&amp;#39;;
 
 export class Header extends React.Component {
   public render() {
@@ -348,13 +349,14 @@ export class Header extends React.Component {
         &amp;lt;/header&amp;gt;
     );
   }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;Modify root package json to add header package dependency along with App.tsx file.&lt;/p&gt;
 &lt;p&gt;package.json dependency&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-3f416.png&quot;
+    href=&quot;/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-19e55.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -362,7 +364,7 @@ export class Header extends React.Component {
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 960px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -373,15 +375,14 @@ export class Header extends React.Component {
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;package-json&quot;
         title=&quot;&quot;
-        src=&quot;/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fb8a0.png&quot;
-        srcset=&quot;/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-1a291.png 148w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-2bc4a.png 295w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fb8a0.png 590w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-526de.png 885w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-fa2eb.png 1180w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-08f6a.png 1770w,
-/relevant-programmer/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-3f416.png 1952w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        src=&quot;/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-c83f1.png&quot;
+        srcset=&quot;/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-569e3.png 240w,
+/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-93400.png 480w,
+/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-c83f1.png 960w,
+/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-23e13.png 1440w,
+/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-10d8f.png 1920w,
+/static/package-json-fbb0a4596b51e8109ee3928eb42f1d11-19e55.png 1952w&quot;
+        sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -389,7 +390,8 @@ export class Header extends React.Component {
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;App.tsx&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { Header } from &amp;#39;@my-app/header&amp;#39;;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { Header } from &amp;#39;@my-app/header&amp;#39;;
 import * as React from &amp;#39;react&amp;#39;;
 import &amp;#39;./App.css&amp;#39;;
 
@@ -406,14 +408,16 @@ class App extends React.Component {
   }
 }
 
-export default App;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+export default App;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;To start app do as below.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn install
-yarn start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Code is available at &lt;a href=&quot;https://github.com/ashokdudhade/typescript-react-yarn-worspaces&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker for programmers]]></title><description><![CDATA[This post covers details on using docker to improve the productivity of programmers. Why should we use docker?
-There are scenarios where we…]]></description><link>/docker-for-programmers/</link><guid isPermaLink="false">/docker-for-programmers/</guid><pubDate>Sat, 06 Oct 2018 02:13:55 GMT</pubDate><content:encoded>&lt;p&gt;This post covers details on using docker to improve the productivity of programmers.&lt;/p&gt;
-&lt;p&gt;Why should we use docker?
-There are scenarios where we want to test things quickly without installing dependencies on your developer machine. Docker comes handy in situations like this, its only matter of downloading an image and running it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn install
+yarn start&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Code is available at &lt;a href=&quot;https://github.com/ashokdudhade/typescript-react-yarn-worspaces&quot;&gt;github&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker for programmers]]></title><description><![CDATA[This post covers details on using docker to improve the productivity of programmers.]]></description><link>https://www.relevantprogrammer.com/posts/docker-for-programmers/</link><guid isPermaLink="false">https://www.relevantprogrammer.com/posts/docker-for-programmers/</guid><pubDate>Sat, 06 Oct 2018 02:13:55 GMT</pubDate><content:encoded>&lt;p&gt;This post covers details on using docker to improve the productivity of programmers.&lt;/p&gt;
+&lt;h2&gt;Why should we use docker?&lt;/h2&gt;
+&lt;p&gt;There are scenarios where we want to test things quickly without installing dependencies on your developer machine. Docker comes handy in situations like this, its only matter of downloading an image and running it.&lt;/p&gt;
 &lt;p&gt;Let’s take an example of testing a static website on a local machine. Usually when we develop a web application using react, angular, vuejs etc. webpack is used to the server locally. There would be unfortunate scenarios where actual build would behave differently than the local serving. So to avoid such issue we can test the static website build by running it locally.&lt;/p&gt;
 &lt;p&gt;We have multiple options to do this, such as use nginx, nodejs express etc. Let’s take an example of using nginx, it would require nginx installation with a version we want. &lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull nginx:1.15.5&lt;/code&gt;&lt;/p&gt;
@@ -423,16 +427,22 @@ There are scenarios where we want to test things quickly without installing depe
 &lt;p&gt;It will start nginx inside docker and host machine can access the site on port 3000(&lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;). &lt;/p&gt;
 &lt;p&gt;Now, let’s look at another scenario assume we have docker container running on a machine and suddenly it stopped the container. How do we know what happened in the container to stop it?&lt;/p&gt;
 &lt;p&gt;First thing is to identify the container id, below command should display all containers.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps -a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps -a&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;View docker logs&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker logs &amp;lt;&amp;lt;containerId&amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker logs &amp;lt;&amp;lt;containerId&amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;It’s fairly simple to view logs using above command.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;View log file inside stopped docker container&lt;/p&gt;
 &lt;p&gt;In some cases,&lt;code class=&quot;language-text&quot;&gt;docker logs&lt;/code&gt; might not be sufficient enough to provide details on exactly what happens. The application might generate logs file at some directory inside the container. If you want to view those logs files from stopped container then we need to copy the file from a stopped container to host machine. Below command could be handy.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker cp &amp;lt;containerId&amp;gt;:/file/path/within/container /host/path/target&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker cp &amp;lt;containerId&amp;gt;:/file/path/within/container /host/path/target&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
